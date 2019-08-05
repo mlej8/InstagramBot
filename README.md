@@ -11,7 +11,7 @@ InstagramBot is the what you need!
 
 InstabramBot is a tool that automates interactions on Instagram (likes, follow, comments, etc.) to drive traffic to your personnal page. It is implemented by using the Selenium module in Python.
 
-## Instagram as a powerful marketing tool
+## Instagram as a Powerful Marketing Tool
 
 According to Instagram, their social media currently has over 800 million active users. Of those people, over 500 million are on the platform on a daily basis, 34 percent of them being millennials and 38 percent checking the site multiple times every day. This plateform can be a powerful marketing tool businesses to expand the presence of their brand and the visibility of their products. In fact the more active you are on this platform, the more attention is drawn to your page. 
 
