@@ -33,7 +33,6 @@ git clone https://github.com/mlej8/InstagramBot.git
 2. Install the dependencies of this project using: 
 ```
 git install -r requirements.txt
-
 ```
 3. Install a **ChromeDriver that is compatible to the version of your ChromeBrowser** in the InstagramBot folder on https://chromedriver.chromium.org/downloads
 
