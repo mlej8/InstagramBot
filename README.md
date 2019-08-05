@@ -27,19 +27,28 @@ Here are some of the main features:
 ### Prerequisites
 1. First, clone this repository using:
 ```
-git clone https://github.com/mlej8/InstagramBot.git
+$ git clone https://github.com/mlej8/InstagramBot.git
 ```
-2. Install the dependencies of this project using: 
+2. Install the dependencies of this project and create a virtual environment using: 
 ```
-pip install -r requirements.txt
+$ pipenv install
 ```
-3. Install a **ChromeDriver that is compatible to the version of your ChromeBrowser** in the InstagramBot folder on https://chromedriver.chromium.org/downloads
+3. Activate virtual environment that pipenv generated:
+```
+$ pipenv shell
+```
+4. Install a **ChromeDriver that is compatible to the version of your ChromeBrowser** in the InstagramBot folder on https://chromedriver.chromium.org/downloads
 
 ### Quickstart
-4. Navigate to the quickstart/ folder, and run any of the example scripts by filling your username and password!
+5. Navigate to the quickstart/ folder, and run any of the example scripts by filling your username and password!
+
+### Exit Virtual Environment
+6. Exit virtual environment
+```
+$ exit
+```
 
 ## Built With
-
 * [Selenium](https://www.seleniumhq.org/) - Web Browser Automation Framework
 
 ## Authors
