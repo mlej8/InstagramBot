@@ -35,6 +35,9 @@ pip install -r requirements.txt
 ```
 3. Install a **ChromeDriver that is compatible to the version of your ChromeBrowser** in the InstagramBot folder on https://chromedriver.chromium.org/downloads
 
+### Quickstart
+4. Navigate to the quickstart/ folder, and run any of the example scripts by filling your username and password!
+
 ## Built With
 
 * [Selenium](https://www.seleniumhq.org/) - Web Browser Automation Framework
