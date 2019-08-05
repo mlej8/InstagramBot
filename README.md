@@ -29,7 +29,6 @@ Here are some of the main features:
 ```
 git clone https://github.com/mlej8/InstagramBot.git
 ```
-
 2. Install the dependencies of this project using: 
 ```
 git install -r requirements.txt
