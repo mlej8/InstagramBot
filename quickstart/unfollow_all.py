@@ -1,22 +1,32 @@
 """ This script should be ran after explore.py. It "unfollows" every Instagram accounts stored in the InstagramDatabase. """
-from Automation.InstagramBot.InstaBot import InstagramBot
-from Automation.InstagramBot.account import InstagramAccount
+import sys
 import time
 
-# Creating an Instagram bot object
-bot = InstagramBot()
+def main():
+    # Importing modules to work with
+    from InstagramBot import InstagramBot
+    from account import InstagramAccount
 
-# Maximize window
-bot.maximize_window()
+    # Creating an Instagram bot object
+    bot = InstagramBot()
 
-# Sign in to Instagram
-bot.login("Your username here", "Your password here")
+    # Maximize window
+    bot.maximize_window()
 
-# Dealing with notification pop up
-bot.manage_notifications("off")
+    # Sign in to Instagram
+    bot.login("Your username here", "Your password here")
 
-# Unfollow all the Instagram accounts stored in the InstagramDatabase
-bot.unfollow_all()
+    # Dealing with notification pop up
+    bot.manage_notifications("off")
 
-# Closing browser when automation is done.
-bot.driver.quit()
+    # Unfollow all the Instagram accounts stored in the InstagramDatabase
+    bot.unfollow_all()
+
+    # Closing browser when automation is done.
+    bot.driver.quit()
+
+if __name__ == "__main__":
+    # change system path to get modules in the previous folder
+    sys.path.append("..")
+    # running script
+    main()

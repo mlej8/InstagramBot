@@ -1,32 +1,40 @@
 """ The purpose of this example is to demonstrate the account module's functionalities """
-from Automation.InstagramBot.account import InstagramAccount
+import sys
 
-# Creating InstagramAccounts 
-acc1 = InstagramAccount("tester")
-acc3 = InstagramAccount("halogen")
-acc2 = InstagramAccount("instachinobot", "Michael Li", "360","453","456")
-acc4 = InstagramAccount("Talal", "Yuyun", "215", "4566", "2316")
+def main():
+    # Importing account module to work with
+    from account import InstagramAccount
 
-# Insert into respective tables in the InstagramDatabse
-acc1.insert_ig_id()
-acc3.insert_ig_id()
-acc2.insert_ig_account()
-acc4.insert_ig_account()
+    # Creating InstagramAccounts 
+    acc1 = InstagramAccount("tester")
+    acc3 = InstagramAccount("halogen")
+    acc2 = InstagramAccount("instachinobot", "Michael Li", "360","453","456")
+    acc4 = InstagramAccount("rowanrow", "Yuyun", "215", "4566", "2316")
 
-# Remove account from InstagramDatabase
-# acc1.remove_ig_id()
-# acc3.remove_ig_id()
-# acc2.remove_ig_account()
-# acc4.remove_ig_account()
+    # Insert into respective tables in the InstagramDatabse
+    acc1.insert_ig_id()
+    acc3.insert_ig_id()
+    acc2.insert_ig_account()
+    acc4.insert_ig_account()
 
-# Print tables from InstagramDatabase
-print("InstagramAccounts table:")
-print(InstagramAccount.get_instagram_accounts())
-print("InstagramIDs table:")
-print(InstagramAccount.get_instagram_ids())
+    # Remove account from InstagramDatabase
+    # acc1.remove_ig_id()
+    # acc3.remove_ig_id()
+    # acc2.remove_ig_account()
+    # acc4.remove_ig_account()
 
-# Clear tables from InstagramDatabase
-InstagramAccount.clear_accounts()
-InstagramAccount.clear_ids()
+    # Print tables from InstagramDatabase
+    print("InstagramAccounts table:")
+    print(InstagramAccount.get_instagram_accounts())
+    print("InstagramIDs table:")
+    print(InstagramAccount.get_instagram_ids())
 
+    # Clear tables from InstagramDatabase
+    # InstagramAccount.clear_accounts()
+    # InstagramAccount.clear_ids()
 
+if __name__ == "__main__":
+    # Change system path to get modules in the previous folder
+    sys.path.append("..")
+    # Running script
+    main()

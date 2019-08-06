@@ -1,22 +1,32 @@
 """ This example demonstrate how InstaBot can be used to automatically like pictures on an Instagram feed"""
-from Automation.InstagramBot.InstaBot import InstagramBot
-from Automation.InstagramBot.account import InstagramAccount
 import time
+import sys
 
-# Creating an Instagram bot object
-bot = InstagramBot()
+def main():    
+    # Importing modules to work with
+    from InstagramBot import InstagramBot
+    from account import InstagramAccount
 
-# Maximize window
-bot.maximize_window()
+    # Creating an Instagram bot object
+    bot = InstagramBot()
 
-# Sign in to Instagram
-bot.login("Your username here", "Your password here")
+    # Maximize window
+    bot.maximize_window()
 
-# Dealing with notification pop up
-bot.manage_notifications("off")
+    # Sign in to Instagram
+    bot.login("Your username here", "Your password here")
 
-# Set a loop to like pictures on the Instagram feed
-bot.like_feed(10)
+    # Dealing with notification pop up
+    bot.manage_notifications("off")
 
-# Closing browser when automation is done.
-bot.driver.quit()
+    # Set a loop to like pictures on the Instagram feed
+    bot.like_feed(10)
+
+    # Closing browser when automation is done.
+    bot.driver.quit()
+
+if __name__ == "__main__":
+    # change system path to get modules in the previous folder
+    sys.path.append("..")
+    # running script
+    main()
