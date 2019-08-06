@@ -37,7 +37,7 @@ $ pipenv install --ignore-pipfile
 ```
 $ pipenv shell
 ```
-4. Install a **ChromeDriver that is compatible to the version of your ChromeBrowser** in the InstagramBot folder on https://chromedriver.chromium.org/downloads
+4. Install a **ChromeDriver that is compatible to the version of your ChromeBrowser** in the Scripts folder on https://chromedriver.chromium.org/downloads
 
 ### Quickstart
 5. Navigate to the quickstart/ folder, and run any of the example scripts by filling your username and password!
