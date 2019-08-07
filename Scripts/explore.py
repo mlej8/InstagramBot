@@ -5,7 +5,6 @@ import time
 def main():
     # Importing modules to work with
     from InstagramBot import InstagramBot
-    from account import InstagramAccount
     
     # Creating an Instagram bot object
     bot = InstagramBot()
@@ -20,7 +19,7 @@ def main():
     bot.manage_notifications("off")
 
     # Search for a specific Instagram account
-    bot.search("Specify Instagram Profile Here", 2)
+    bot.search("Specify Instagram Profile Here", 1)
 
     # Follow the account
     bot.follow()

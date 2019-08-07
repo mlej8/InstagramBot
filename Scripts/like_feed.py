@@ -5,8 +5,7 @@ import sys
 def main():    
     # Importing modules to work with
     from InstagramBot import InstagramBot
-    from account import InstagramAccount
-
+    
     # Creating an Instagram bot object
     bot = InstagramBot()
 

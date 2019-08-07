@@ -37,13 +37,12 @@ $ pipenv install --ignore-pipfile
 ```
 $ pipenv shell
 ```
-4. Install a **ChromeDriver that is compatible to the version of your ChromeBrowser** in the Scripts folder on https://chromedriver.chromium.org/downloads
 
 ### Quickstart
-5. Navigate to the quickstart/ folder, and run any of the example scripts by filling your username and password!
+4. Navigate to the quickstart/ folder in terminal, and run any of the example scripts using: pipenv run python script.py
 
 ### Exit Virtual Environment
-6. Exit virtual environment
+5. Exit virtual environment
 ```
 $ exit
 ```

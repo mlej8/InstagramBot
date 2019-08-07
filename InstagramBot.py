@@ -4,6 +4,7 @@ from selenium.webdriver.common.action_chains import ActionChains
 from selenium.common.exceptions import NoSuchElementException, StaleElementReferenceException, WebDriverException, ElementClickInterceptedException, TimeoutException
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions 
+from webdriver_manager.chrome import ChromeDriverManager
 import time
 import datetime
 import sqlite3
@@ -11,12 +12,12 @@ from account import InstagramAccount
 
 class InstagramBot():
 
-    # Create class variable to set an uniform loading time of 1s
+    # Create class variable to set an uniform loading time of 2s
     PAUSE_TIME = 2
 
     def __init__(self): 
         """ InstagramBot's constructor. Each time an InstagramBot is created, a driver is automatically instantiated as its instance variable """
-        self.driver = webdriver.Chrome(executable_path=r"chromedriver.exe")
+        self.driver = webdriver.Chrome(ChromeDriverManager().install()) # using ChromeDriverManager to download a version of chromdriver.exe that that is compatible with the current installed browser.
         self.action = ActionChains(self.driver)
         self.wait = WebDriverWait(self.driver, 10)
         self.driver.implicitly_wait(10)  # setting an implicit wait. It is good practice to set up an implicit wait right after the driver was created to avoid "NoSuchElementError" and give the browser more time to load.  
@@ -60,11 +61,11 @@ class InstagramBot():
 
     def close(self):
         """ Method that close the current tab """
-        self.driver.close()
+        self.driver.close() # close current page on which the browser's focus is on.
         
     def quit(self):
         """ Method that closes the browser and shuts down the ChromeDriver """
-        self.driver.quit()  
+        self.driver.quit() # used to shut down the web driver instance or destroy it in memory
 
     def scroll_down(self):
         """ Method that scrolls once to the bottom of the current page. """ 

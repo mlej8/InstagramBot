@@ -1,1 +1,0 @@
-This folder contains divers example scripts to demonstrate and use the functionality of InstagramBot.
