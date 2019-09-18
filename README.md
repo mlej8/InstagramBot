@@ -9,7 +9,7 @@ ___Then look no further!___
 
 InstagramBot is the what you need! 
 
-InstabramBot is a tool that automates interactions on Instagram (likes, follow, comments, etc.) to drive traffic to your personnal page. It is implemented by using the Selenium module in Python.
+InstagramBot is a tool that automates interactions on Instagram (likes, follow, comments, etc.) to drive traffic to your personal page. It is implemented by using the Selenium module in Python.
 
 ## Instagram as a Powerful Marketing Tool
 
