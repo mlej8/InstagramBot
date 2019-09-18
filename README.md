@@ -1,6 +1,6 @@
 ![Instagram](https://user-images.githubusercontent.com/43357040/62481109-844ed800-b77f-11e9-8c62-ecdc76efe152.png)
 # InstagramBot
-- Are you looking to gain more fame on one of the most popular socia media platform?
+- Are you looking to gain more fame on one of the most popular social media platform?
 - Do you need a little help on you way to becoming an Instagram influencer?
 - Are you looking to use Instagram to build a brand for your business or sell a product?
 - Do you simply want more likes and followers?
