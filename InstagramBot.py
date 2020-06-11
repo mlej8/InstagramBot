@@ -98,7 +98,7 @@ class InstagramBot():
 
     def like(self):
         """Method that finds all the like buttons and clicks on each one of them, if they are not already clicked (liked)."""
-        like_xpath = "//span[contains(@class,\"glyphsSpriteHeart\") and @aria-label = \"Like\"]//parent::button"
+        like_xpath = "/html/body/div[4]/div[2]/div/article/div[2]/section[1]/span[1]/button"
         liked_xpath = "//span[contains(@class,\"glyphsSpriteHeart\") and @aria-label=\"Unlike\"]"
         unliked = self.driver.find_elements_by_xpath(like_xpath)
         liked = self.driver.find_elements_by_xpath(liked_xpath)        
